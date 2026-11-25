@@ -107,8 +107,14 @@ What else went wrong on the upgrade this kext was written for, in case it helps 
 - **Kernel memory write.** The handler swap writes one pointer in `__DATA_CONST` with write protection lifted for that instant, the same mechanism Lilu uses for its own patches.
 - **Untested combinations.** Only Sequoia (Darwin 24) is enabled. Other kernels are refused by Lilu's version check.
 
+## Disclaimer and Legal Notice
+
+Apple, macOS, Mac, MacBook and APFS are trademarks of Apple Inc. OpenCore, OpenCore Legacy Patcher, Lilu and DiskWarrior belong to their respective owners. This project is not affiliated with, endorsed by or supported by any of them.
+
+This is a kernel extension that patches a live kernel data structure through Lilu on an unsupported configuration. It relies on undocumented kernel internals that can change in any macOS update. A kernel extension can panic the machine, and disk tools run with the wrong parameters can damage data. Back up first, use it only on Macs you own or administer, and you assume all risk.
+
 ## License
 
-BSD 3-Clause, the same license as Lilu. See [LICENSE](LICENSE).
+BSD 3-Clause, the same license as Lilu. See [LICENSE](LICENSE). The software is provided as is, without warranty of any kind.
 
 The built kext also contains Lilu's `plugin_start.cpp` (BSD 3-Clause) and links MacKernelSDK's `libkmod.a` (Apple Public Source License 2.0). Their notices are in [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES) and ship in every release zip.
