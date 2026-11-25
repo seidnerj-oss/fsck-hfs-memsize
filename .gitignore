@@ -1,0 +1,6 @@
+/vendor/
+/build/
+.heartbeat
+.claude/
+.envrc
+.DS_Store
