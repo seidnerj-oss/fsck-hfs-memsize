@@ -90,8 +90,8 @@ What else went wrong on the upgrade this kext was written for, in case it helps 
 | Component | Version |
 |---|---|
 | Mac | MacBook5,1 (late 2008 aluminum), 4 GB RAM, 250 GB HDD, HFS+ |
-| From / to | OS X El Capitan 10.11.6 to macOS Sequoia 15.8.3 (installer app 20.8.12) |
-| OpenCore Legacy Patcher | 2.5.1 (GUI), with the OpenCore it bundles; config checked with ocvalidate 1.0.4 |
+| From / to | OS X El Capitan 10.11.6 to macOS Sequoia 15.8.3, build 24H241 (installer app 20.8.12) |
+| OpenCore Legacy Patcher | 2.5.1 (GUI), with the OpenCore it bundles (REL-106-2025-11-03); config checked with ocvalidate 1.0.4 |
 | Lilu | 1.7.1 |
 | Other kexts on the USB | RestrictEvents 1.1.7, AppleALC 1.6.3, CryptexFixup 1.0.4, AMFIPass 1.4.1, BlueToolFixup 2.6.9, CSLVFixup 2.6.1, IO80211ElCap 11.1, nForceEthernet 2.0.22 |
 | FsckMemsize | 1.0.0, built with Xcode 27.1 (27A9275), Apple clang 21.0.0, MacKernelSDK 3f750085, against xnu-11417.140.69 |
